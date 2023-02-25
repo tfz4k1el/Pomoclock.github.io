@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="./well.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e4efffee6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/e4efffee6b.css" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 id="clockMain"></h1>
+
+            <div id="pomo">
+                <div class="panel">
+                    <p id="work">work</p>
+                    <p id="break">break</p>
+                </div>
+                <div class="time">
+                    <p id="minutes">mm</p>
+                    <p>:</p>
+                    <p id="seconds">ss</p>
+                </div>
+                <div class="controls">
+                    <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+                    <button id="reset" onclick="reset()"><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+                <div class="close">
+                    <button onclick="hidePomo()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="pomoBtn">
+                    <button id="showBtn" onclick="showPomo()"> <i class="fa-solid fa-clock-rotate-left"></i> </button>
+                </div>
+
+            </div>
+            
+        <div class="navs">
+            <button id="expand" class="btnScreen" onclick="fullScreen()"><i class = "fa-solid fa-up-right-and-down-left-from-center"></i></button>
+            <button id="contract" class="btnScreen" onclick="fullScreen()"><i class="fa-solid fa-down-left-and-up-right-to-center"></i> </button>
+        </div>
+    </div>
+    <script src="./time.js"></script>
+</body>
+</html>
